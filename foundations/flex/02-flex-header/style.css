@@ -1,6 +1,14 @@
-.header  {
+/*NOTE: using align-items to align items along the cross axis,
+* using justify content to add space between all elements,
+* using padding to add space between the border and its elements.
+* Essentially all the work has been done on the flex-box container*/
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .logo {
@@ -11,9 +19,15 @@
   padding: 4px 32px;
 }
 
+/*NOTE: adding margin and padding of 0 to get rid of default margin and
+* padding, adding a gap between child elements */
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
 }
 
 a {
