@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -14,14 +15,48 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+/*NOTE: 
+* - made modal container a flex container
+* - added padding and gap between elements*/
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
 
+/*NOTE:
+* - created container containing main body elements
+* - made flex direction column so they sit on top of each other
+* - added gap and padding*/
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+/*NOTE: 
+* - made a top section for the header and close button
+* - adding space between so the 'x' can be at the end*/
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*NOTE: 
+* - bolded font and increase font size as per assignment instructions*/
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*NOTE:
+* - added flex-shrink: 0 so that the item will not shrink
+* when the container gets smaller*/
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -50,10 +86,19 @@ body {
   padding: 0;
 }
 
+/*NOTE: 
+* - added bottom section flex container for the continue and cancel area
+* - added gap between flex items*/
+.bottom-section {
+  display: flex;
+  gap: 5px;
+}
+
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  width: 100px;
 }
 
 button.continue {
@@ -67,3 +112,4 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
