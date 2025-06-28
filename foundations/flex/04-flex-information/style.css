@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 img {
@@ -7,6 +7,67 @@ img {
   height: 100px;
 }
 
+/*NOTE:
+* - flex container
+* - items aligned
+* - content centered
+* - gap & padding applied to parent container*/
+.info-icons-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  /* padding: 32px; */
+}
+
+/*NOTE:
+* - created this div in order to center the title
+* - centering content*/
+.info-title-section {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+/*NOTE:
+* - created various divs for each individual item in order to place
+* the image on top of the text
+* - using flex direction: column to place elements on top of another
+* - adding text wrap to keep text centered with image */
+.barberry-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.chili-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.pepper-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-wrap: wrap;
+  text-align: center;
+}
+.saffron-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-wrap: wrap;
+  text-align: center;
+}
 .title {
   font-size: 36px;
   font-weight: 900;
@@ -24,3 +85,4 @@ img {
   justify-content: center;
   background: #eee;
 }
+
